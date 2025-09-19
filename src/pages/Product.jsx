@@ -5,7 +5,7 @@ import { IoGridSharp } from 'react-icons/io5'
 import { FaListAlt } from 'react-icons/fa'
 import Post from '../Components/Post'
 import { ApiData } from '../Components/ContextApi'
-import Pagination from '../Components/pagination'
+import PPagination from '../Components/PPagination'
 
 const Product = () => {
 
@@ -155,7 +155,7 @@ const Product = () => {
                         </div>
                     </div>
                     <Post allpage={allpage} filtercate={filtercate} />
-                    <Pagination pageNumber={pageNumber} paginate={paginate} currentpage={currentpage} next={next} prev={prev} />
+                    <PPagination pageNumber={pageNumber} paginate={paginate} currentpage={currentpage} next={next} prev={prev}/>
                 </Container>
             </section>
         </>
